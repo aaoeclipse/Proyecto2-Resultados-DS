@@ -21,7 +21,7 @@ def calc_elo(win_team, lose_team):
     rank_diff = winner_rank - loser_rank
     exp = (rank_diff  * -1) / 400
     odds = 1 / (1 + math.pow(10, exp))
-    # modify the k value according to the rank
+    #modificar el valor k dependiendo del rango 
     if winner_rank < 2100:
         k = 32
     elif winner_rank >= 2100 and winner_rank < 2400:
